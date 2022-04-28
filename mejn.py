@@ -99,7 +99,7 @@ def ctiMapu(cislo):
 
     while True:
         x = f.read(1)
-        if x == str(cislo) or (cislo%10 >= 1 and x == str(cislo)[0] and f.read(1) == str(cislo)[1]):
+        if x == str(cislo) or (cislo >= 10 and x == str(cislo)[0] and f.read(1) == str(cislo)[1]):
             while True:
                 x = f.read(1)
                 if x == ".":
@@ -244,6 +244,7 @@ def levliky():
             
 class postava:
     def __init__(self):
+        print(mapa)
         for i in range(len(mapa)):
             for y in range(len(radek)):
                 if mapa[i][y] == "@":
