@@ -80,10 +80,12 @@ levl = ""
 dataRead = open("data.txt", "r")
 daticka = dataRead.read()
 for jkvnjs in daticka:
+    print("kkt:", jkvnjs)
     if jkvnjs.isdigit():
         levl+=jkvnjs
     else:
-        levlyComplet.append(int(levl))
+        if levl != "":
+            levlyComplet.append(int(levl))
         levl = ""
 
 dataRead.close()
