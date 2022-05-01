@@ -186,7 +186,7 @@ def kresli():
         global i, nastaveni
         i += 1
         nastaveni = btn(screen,(20,20,70,70), obrazek = nasta)
-        text = nazev.render("Puzzle", True, (255, 255, 255))
+        text = nazev.render("Sokoban", True, (255, 255, 255))
         text2 = font1.render('pro start stiskni "MEZERNIK"', True, (255, 255, 255))
         textRect = text.get_rect()
         text2Rect = text2.get_rect()
@@ -201,7 +201,7 @@ def kresli():
     elif SCENA == "levely":
         screen.fill((0,0,0))
         nastaveni = btn(screen,(20,20,70,70), obrazek = nasta)
-        text = nazev.render("Levels", True, (255, 255, 255))
+        text = nazev.render("Levely", True, (255, 255, 255))
         textRect = text.get_rect()
         textRect.center = (stredX, stredY - 350)
         screen.blit(text, textRect)
