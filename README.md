@@ -1,1 +1,3 @@
-# 2021-2e-ruzicka-sakoban
+# Sakoban
+### Arkádová hra
+#### Ten kdo to dohraje, život nemaje.
