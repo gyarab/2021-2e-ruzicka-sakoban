@@ -33,7 +33,7 @@ kriz = pygame.image.load("icon/krizek.png").convert_alpha()
 frame = pygame.image.load("icon/ctverec.png").convert_alpha()
 back = pygame.image.load("icon/Back.png").convert_alpha()
 
-BLOK = 60
+BLOK = 70
 
 stena = pygame.image.load("grafika/stena.png").convert()
 stena = pygame.transform.scale(stena, (BLOK, BLOK))
@@ -59,7 +59,6 @@ karaZepredu = pygame.image.load("grafika/KaraZepredu.png").convert_alpha()
 karaZepredu = pygame.transform.scale(karaZepredu, (BLOK, BLOK+BLOK//3))
 karaZepredu2 = pygame.image.load("grafika/KaraZepredu2.png").convert_alpha()
 karaZepredu2 = pygame.transform.scale(karaZepredu2, (BLOK, BLOK+BLOK//3))
-
 
 ZVUK = True
 HUDBA = True
@@ -229,7 +228,7 @@ def kresli():
     elif SCENA == "vyhra":
         text = font2.render("Completed", True, (255, 255, 255))
         textRect = text.get_rect()
-        textRect.center = (stredX, stredY - 300)
+        textRect.center = (stredX, 100)
         screen.blit(text, textRect)
 
     pygame.display.flip()
@@ -394,7 +393,8 @@ while jede:
         if event.type == pygame.QUIT:
             jede = False
         elif event.type == pygame.VIDEORESIZE:
-            scX, scY = 1920, 1080
+            scX, scY = pygame.display.Info().current_w, pygame.display.Info().current_h
+            stredX, stredY = pygame.display.Info().current_w // 2, pygame.display.Info().current_h // 2
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 jede = False
