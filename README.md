@@ -4,4 +4,4 @@
 
 
 ## Exe.zip soubor
-#### Pokud vám nejde soubor stáhnout kvůli antivirové ochraně, zkuste jiný prohlížeč než Chrome. Mně to šlo bez problému na Brave a Edge
+#### Pokud vám nejde soubor stáhnout kvůli antivirové ochraně, zkuste jiný prohlížeč než Chrome. Mně to šlo bez problému na Brave a Edge.
