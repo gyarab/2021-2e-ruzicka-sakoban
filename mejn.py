@@ -8,7 +8,8 @@ pygame.mixer.init()
 scX, scY = 1500, 1000
 stredX, stredY = scX//2, scY//2
 screen = pygame.display.set_mode([scX, scY], pygame.RESIZABLE)
-pygame.display.set_caption('puzzle')
+pygame.display.set_caption('Sokoban')
+pygame.display.set_icon(pygame.image.load("icon/icona.png"))
 clock = pygame.time.Clock()
 nazev = pygame.font.Font("Emulogic.ttf", 100)
 font1 = pygame.font.Font("Emulogic.ttf", 30)
